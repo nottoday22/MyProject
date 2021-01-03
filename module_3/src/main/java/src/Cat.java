@@ -1,6 +1,11 @@
 package src;
 
 public class Cat {
+    public static final int NUMBER_OF_EYES = 2;
+    public static final double MIN_WEIGHT = 1000.00;
+    public static final double MAX_WEIGHT = 9000.00;
+
+
     public static int count = 0;
     private double originWeight;
     private double weight;
