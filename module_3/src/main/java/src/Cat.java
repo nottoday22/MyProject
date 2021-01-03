@@ -1,5 +1,5 @@
-package module_3.src;
-
+package src;
+-
 public class Cat {
     public static int count = 0;
     private double originWeight;
