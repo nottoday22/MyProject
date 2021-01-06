@@ -4,12 +4,18 @@ import java.io.IOException;
 
 public class Loader
 {
+
     public static void main(String[] args) throws IOException {
         Cat vaska = new Cat();
         Cat murka = new Cat();
         Cat kot = new Cat();
         Cat dron = new Cat();
         Cat hrom = new Cat();
+        Cat tima1 = getKitten();
+        Cat tima2 = getKitten();
+        Cat tima3 = getKitten();
+
+
 
         System.out.println("Вес Васьки: " + vaska.getWeight());
         System.out.println("Вес Мурки: " +murka.getWeight());
@@ -41,5 +47,9 @@ public class Loader
 
         vaska.feed(333.00);
         System.out.println(vaska.getWeight());
+
+    }
+    private static Cat getKitten() {
+        return new Cat(1100.00);
     }
 }

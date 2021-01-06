@@ -12,6 +12,15 @@ public class Cat {
     private double minWeight;
     private double maxWeight;
     private double eatenFood;
+    private String color;
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
 
     public Cat() {
         weight = 1500.0 + 3000.0 * Math.random();
@@ -19,6 +28,10 @@ public class Cat {
         minWeight = 1000.0;
         maxWeight = 9000.0;
         count++;
+    }
+
+    public Cat(double weight) {
+        this.weight = weight;
     }
 
     public void meow() {
@@ -63,5 +76,4 @@ public class Cat {
             return "Playing";
         }
     }
-    //check ssh connect
 }
