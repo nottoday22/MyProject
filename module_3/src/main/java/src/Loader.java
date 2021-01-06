@@ -47,9 +47,12 @@ public class Loader
 
         vaska.feed(333.00);
         System.out.println(vaska.getWeight());
+        Cat vika = new Cat(123.32, 5555.55,111.32);
+        Cat viktor = new Cat(vika);
+        System.out.println(viktor);
 
     }
     private static Cat getKitten() {
         return new Cat(1100.00);
-    }
+    } .Cat
 }

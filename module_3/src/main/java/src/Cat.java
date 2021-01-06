@@ -30,6 +30,36 @@ public class Cat {
         count++;
     }
 
+    public void setWeight(double weight) {
+        this.weight = weight;
+    }
+
+    public double getMinWeight() {
+        return minWeight;
+    }
+
+    public void setMinWeight(double minWeight) {
+        this.minWeight = minWeight;
+    }
+
+    public double getMaxWeight() {
+        return maxWeight;
+    }
+
+    public void setMaxWeight(double maxWeight) {
+        this.maxWeight = maxWeight;
+    }
+
+    public Cat(double weight, double maxWeight, double minWeight){
+        this.weight = weight;
+        this.maxWeight = maxWeight;
+        this.minWeight = minWeight;
+    }
+
+    public Cat(Cat other){
+        this(other.getWeight(), other.getMaxWeight(), other.getMinWeight());
+    }
+
     public Cat(double weight) {
         this.weight = weight;
     }
